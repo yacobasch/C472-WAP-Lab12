@@ -61,6 +61,16 @@
         <servlet-name>FailureServ</servlet-name>
         <url-pattern>/FailureServ</url-pattern>
     </servlet-mapping>
+    <servlet>
+        <description></description>
+        <display-name>LogoutServ</display-name>
+        <servlet-name>LogoutServ</servlet-name>
+        <servlet-class>LogoutServ</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>LogoutServ</servlet-name>
+        <url-pattern>/LogoutServ</url-pattern>
+    </servlet-mapping>
     <welcome-file-list>
         <welcome-file>index.html</welcome-file>
         <welcome-file>index.htm</welcome-file>

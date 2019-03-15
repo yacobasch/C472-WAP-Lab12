@@ -9,9 +9,6 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
 
-/**
- * Servlet implementation class for Servlet: SucessServ
- */
 public class SuccessServ extends HttpServlet implements Servlet {
     public SuccessServ() {
         super();
@@ -24,14 +21,16 @@ public class SuccessServ extends HttpServlet implements Servlet {
 
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         HttpSession sess = request.getSession();
-        // TODO Auto-generated method stub
         System.out.println("IN SUCESSSERV DOPOST");
         response.setContentType("text/html");
         PrintWriter out = response.getWriter();
         out.println("<html>");
         out.println("<body>");
         out.println("COOKIE:" + request.getHeader("cookie"));
+        out.println("<br>");
         out.println("Congratulations! You have entered the correct username and password");
+        out.println("<br>");
+        out.println("<a href=\'LogoutServ\'>You Can Logout here</a>");
         out.println("</body>");
         out.println("</html>");
 

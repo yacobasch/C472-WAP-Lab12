@@ -12,13 +12,11 @@ public class LogoutServ extends HttpServlet {
         response.setContentType("text/html");
         PrintWriter out = response.getWriter();
 
-
-        request.getRequestDispatcher("link.html").include(request, response);
+        out.print("You are Logged Out!");
+        request.getRequestDispatcher("index.jsp").include(request, response);
 
         Cookie ck = new Cookie("name", "");
         ck.setMaxAge(0);
         response.addCookie(ck);
-
-        out.print("you are successfully logged out!");
     }
 }

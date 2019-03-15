@@ -8,9 +8,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
-/**
- * Servlet implementation class for Servlet: LoginServlet
- */
+
 public class LoginServ extends HttpServlet implements Servlet {
 
     public LoginServ() {
@@ -41,13 +39,15 @@ public class LoginServ extends HttpServlet implements Servlet {
         out.println("<html>");
         out.println("<body>");
         out.println("<form method=\"post\" action=\"ValidateServ\">");
-        out.println("<table border=\"2\" width=\"20%\">");
-        out.println("<tr><td>Username:</td>");
-        out.println("<td><input name=\"userName\" maxlength=\"10\"></td></tr>");
-        out.println("<tr><td>Password:</td>");
-        out.println("<td><input type=\"password\" name=\"password\" maxlength=\"10\"></td></tr>");
-        out.println("<tr><td colspan=\"2\" align=\"center\"><input type=\"submit\" name=\"Login\" value=\"Login\"></td></tr>");
-        out.println("</table>");
+        out.println("Username: <input name=\"userName\" maxlength=\"10\">");
+        out.println("<br>");
+        out.println("<br>");
+        out.println("Password: <input type=\"password\" name=\"password\" maxlength=\"10\">");
+        out.println("<br>");
+        out.println("<br>");
+        out.println("<input type=\"submit\" name=\"Login\" value=\"Login\">");
+        out.println("<br>");
+        out.println("<br>");
         out.println("</form>");
         out.println("</body>");
         out.println("</html>");

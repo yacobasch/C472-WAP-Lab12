@@ -6,9 +6,6 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
-/**
- * Servlet implementation class for Servlet: FailureServ
- */
 public class FailureServ extends javax.servlet.http.HttpServlet implements javax.servlet.Servlet {
     public FailureServ() {
         super();
@@ -21,7 +18,7 @@ public class FailureServ extends javax.servlet.http.HttpServlet implements javax
         PrintWriter out = response.getWriter();
         out.println("<html>");
         out.println("<body>");
-        out.println("Sorry, you have entered wrong username or password");
+        out.println("Sorry, Username or Password is Wrong!");
         out.println("<a href=\"LoginServ\">try again</a>");
         out.println("</body>");
         out.println("</html>");
